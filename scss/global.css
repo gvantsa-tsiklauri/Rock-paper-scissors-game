@@ -1,0 +1,287 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.2;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+::-moz-selection {
+  background-color: #ffa6c1;
+}
+
+::selection {
+  background-color: #ffa6c1;
+}
+
+@font-face {
+  font-family: "play";
+  src: url(../Playtime.otf);
+}
+body {
+  background-image: url(../background.jpg);
+  background-position-y: 0.3333333333;
+  background-repeat: no-repeat;
+  /* background-size: 125%;
+  background-position-y: calc(100% / 3 + 50px);
+  background-position-x: calc(100% / 2 - 50px); */
+  background-size: cover;
+  background-position: top;
+}
+body section {
+  max-width: 1200px;
+  width: 95%;
+  margin: auto auto;
+  position: relative !important;
+}
+body section > header {
+  padding: 0;
+  margin: auto auto;
+  max-width: 500px;
+}
+body section > header h3 {
+  color: #e23963;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "play";
+  text-align: center;
+  margin: 20px 0;
+}
+body section > main {
+  padding: 40px;
+  border-radius: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+body section > main header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+body section > main header h4 {
+  color: #e23963;
+  font-size: 30px;
+  font-family: "play";
+  font-weight: 600;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  body section > main header h4 {
+    font-size: 25px;
+  }
+}
+body section > main header div {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+body section > main header button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition-duration: 500ms;
+}
+body section > main header button:hover {
+  transform: scale(1.15);
+}
+body section > main main > div, body section > main main figure {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  body section > main main > div, body section > main main figure {
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body section > main main > div #score, body section > main main figure #score {
+  color: #e23963;
+  font-size: 25px;
+  font-family: "play";
+  font-weight: 600;
+  letter-spacing: 3px !important;
+}
+@media (max-width: 768px) {
+  body section > main main > div #score, body section > main main figure #score {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+body section > main main > div button, body section > main main figure button {
+  background-color: transparent;
+  padding: 10px 15px;
+  border-radius: 12px;
+  color: #e23963;
+  font-weight: 600;
+  font-family: "play";
+  letter-spacing: 3px;
+  font-size: 18px;
+  border: 2px #e23963 solid;
+  max-width: 200px;
+}
+body section > main main h3 {
+  margin-top: 30px;
+  color: #e23963;
+  font-size: 30px;
+  font-family: "play";
+  font-weight: 600;
+  text-align: center;
+}
+
+figure {
+  max-width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  figure {
+    max-width: 100% !important;
+    flex-direction: row !important;
+  }
+}
+@media (max-width: 560px) {
+  figure {
+    flex-direction: column !important;
+  }
+}
+figure span {
+  color: #e23963;
+  font-weight: 600;
+  font-family: "play";
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+
+.decor1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  background: linear-gradient(39deg, rgb(255, 229, 236) 0%, rgba(255, 71, 126, 0.2) 81%);
+  animation: moveLoop 4s ease-in-out infinite alternate;
+}
+@media (max-width: 970px) {
+  .decor1 {
+    height: 150px;
+    width: 150px;
+    left: 70%;
+  }
+}
+
+.decor2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  background: linear-gradient(340deg, rgb(255, 71, 126) 0%, rgba(255, 71, 126, 0.2) 81%);
+  animation: moveLoop 4s ease-in-out infinite alternate;
+}
+
+.decor3 {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  position: absolute;
+  top: 90%;
+  left: 70%;
+  background: linear-gradient(120deg, #FF99AC 0%, rgba(255, 71, 126, 0.4) 91%);
+  animation: moveLoop 4s ease-in-out infinite alternate;
+}
+
+.decor4 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  background: linear-gradient(120deg, rgb(250, 184, 153) 0%, rgba(255, 71, 126, 0.2) 91%);
+  animation: moveLoop 4s ease-in-out infinite alternate;
+}
+
+@keyframes moveLoop {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translatey(20px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+@media (max-width: 768px) {
+  .decor1, .decor2, .decor3, .decor4 {
+    display: none;
+  }
+  section > header > h3 {
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=global.css.map */
