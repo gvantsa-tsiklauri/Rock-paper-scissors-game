@@ -80,6 +80,7 @@ body {
   background-position-x: calc(100% / 2 - 50px); */
   background-size: cover;
   background-position: top;
+  min-height: 100svh;
 }
 body section {
   max-width: 1200px;
@@ -90,7 +91,7 @@ body section {
 body section > header {
   padding: 0;
   margin: auto auto;
-  max-width: 500px;
+  max-width: 450px;
 }
 body section > header h3 {
   color: #e23963;
@@ -99,6 +100,11 @@ body section > header h3 {
   font-family: "play";
   text-align: center;
   margin: 20px 0;
+}
+@media (max-width: 768px) {
+  body section > header h3 {
+    font-size: 30px;
+  }
 }
 body section > main {
   padding: 40px;
@@ -117,6 +123,11 @@ body section > main header {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+}
+@media (max-width: 400px) {
+  body section > main header img {
+    width: 60px;
+  }
 }
 body section > main header h4 {
   color: #e23963;
@@ -191,6 +202,11 @@ body section > main main h3 {
   font-weight: 600;
   text-align: center;
 }
+@media (max-width: 400px) {
+  body section > main main img {
+    width: 50px !important;
+  }
+}
 body footer {
   display: flex;
   justify-content: center;
@@ -200,6 +216,13 @@ body footer p {
   color: rgb(77, 74, 74);
   font-size: 17px;
   letter-spacing: 2px;
+}
+@media (max-width: 370px) {
+  body footer p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 body footer p a {
   color: #e23963;
@@ -298,9 +321,6 @@ figure span {
 }
 @media (max-width: 768px) {
   .decor1, .decor2, .decor3, .decor4 {
-    display: none;
-  }
-  section > header > h3 {
-    font-size: 30px;
+    display: none !important;
   }
 }/*# sourceMappingURL=global.css.map */

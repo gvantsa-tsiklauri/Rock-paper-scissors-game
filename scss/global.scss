@@ -70,6 +70,7 @@ body {
     background-position-x: calc(100% / 2 - 50px); */
     background-size: cover;
     background-position: top;
+    min-height: 100svh;
 
     section {
         max-width: 1200px;
@@ -80,7 +81,7 @@ body {
         >header {
             padding: 0;
             margin: auto auto;
-            max-width: 500px;
+            max-width: 450px;
 
             h3 {
                 color: #e23963;
@@ -89,6 +90,9 @@ body {
                 font-family: 'play';
                 text-align: center;
                 margin: 20px 0;
+                @media (max-width: 768px) {
+                    font-size: 30px;
+                }
             }
         }
 
@@ -109,6 +113,11 @@ body {
                 flex-direction: column;
                 justify-content: center;
                 gap: 20px;
+                img {
+                    @media (max-width: 400px) {
+                        width: 60px;
+                    }
+                }
 
                 h4 {
                     color: #e23963;
@@ -180,6 +189,11 @@ body {
                     font-weight: 600;
                     text-align: center;
                 }
+                img {
+                    @media (max-width: 400px) {
+                        width: 50px !important;
+                    }
+                }
             }
         }
     }
@@ -192,6 +206,11 @@ body {
             color: rgb(77, 74, 74);
             font-size: 17px;
             letter-spacing: 2px;
+            @media (max-width: 370px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
             a {
                 color: #e23963;
@@ -273,9 +292,6 @@ figure {
 
 @media (max-width: 768px) {
     .decor1, .decor2, .decor3, .decor4 {
-        display: none;
-    }
-    section > header > h3 {
-        font-size: 30px;
+        display: none !important;
     }
 }
