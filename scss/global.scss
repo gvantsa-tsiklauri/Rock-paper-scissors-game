@@ -183,7 +183,27 @@ body {
             }
         }
     }
-    
+    footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+
+        p {
+            color: rgb(77, 74, 74);
+            font-size: 17px;
+            letter-spacing: 2px;
+
+            a {
+                color: #e23963;
+                font-size: 18px;
+                font-family: 'play';
+                letter-spacing: 3px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
 
 figure {

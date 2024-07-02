@@ -191,6 +191,25 @@ body section > main main h3 {
   font-weight: 600;
   text-align: center;
 }
+body footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+body footer p {
+  color: rgb(77, 74, 74);
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+body footer p a {
+  color: #e23963;
+  font-size: 18px;
+  font-family: "play";
+  letter-spacing: 3px;
+}
+body footer p a:hover {
+  text-decoration: underline;
+}
 
 figure {
   max-width: 70%;
